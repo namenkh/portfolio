@@ -2,13 +2,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #41c466;
+    background-color: #144723;
     transition: background-color 2s ease;
     background-image:url('/assignment4/img/monstera.jpeg');
     background-size: 100%;
     text-decoration-color: #878787;
     text-align: center;
-    
+
   }
   
   header, footer {
@@ -34,7 +34,7 @@ body {
     height: auto;
     display: block;
     max-width: 100%;
-
+    margin: 0 auto;
   }
   
   main {
