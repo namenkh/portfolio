@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #41c466;
+    transition: background-color 2s ease;
+    background-image:url('/assignment4/img/monstera.jpeg');
+    background-size: 100%;
+    text-decoration-color: #878787;
+    text-align: center;
+    
+  }
+  
+  header, footer {
+    background-color: #fff;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    background-color: rgb(75, 152, 45);
+  }
+  header {
+    text-align: center;
+  }
+  footer{text-align: right;}
+
+  h1, h2 {
+    margin: 0;
+  }
+  
+  figure {
+    margin: 20px 0;
+  }
+  
+  img {
+    height: auto;
+    display: block;
+    max-width: 100%;
+
+  }
+  
+  main {
+    padding: 20px;
+    margin: 0 auto;
+  }
+  
+  footer {
+    font-size: 12px;
+  }
+  
+  /* Surprise Transformations */
+  #plain-plants-banner {
+    transition: transform 2s ease;
+  }
+  
+  #plain-plants-content {
+    transition: transform 2s ease;
+  }
+  
+  #plain-plants-footer {
+    transition: transform 2s ease;
+  }
+  
+  /* Surprise Animations */
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+  
+  /* Apply transformations and animations on interaction */
+  body:hover{ 
+    animation: bounce 1s infinite;
+  }
+
+  #plain-plants-banner:hover {
+    transform: rotate(5deg);
+  }
+  
+  #plain-plants-content:hover {
+    animation: grow 2s infinite;
+  }
+  
+  #plain-plants-footer:hover {
+    transform: translateY(-10px);
+  }
+  
+  body:hover {
+    background-color: #878787;
+    color: #fff;
+  }
+  
