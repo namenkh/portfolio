@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<title>Assignment 5</title>
+	
+	<link rel="stylesheet" href="css/style.css">	
+	<h1>Welcome to Goose Time</h1>
+</head>
+
+
+<body>
+    <main>
+        <div id="background"> 
+            <img src="/projects/assignment5/img/summer.png" alt="summer scene">
+            </div>
+    <img src="/projects/assignment5/img/duck-dancing-transparent-duck.gif" alt="Goose Dancing" id="gooseImage">
+    <button id="transformButton">Silly Gooses</button>
+</main>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+  
+  <!-- Write your jQuery code inside of the .ready() function below -->
+  <script>
+$(document).ready(function() {
+    $('#transformButton').click(function() {
+        let newGoose = $('<img src="/projects/assignment5/img/duck-dancing-transparent-duck.gif" alt="Goose Dancing" class="goose">');
+        $('main').append(newGoose);
+    });
+
+    $(document).on('mouseenter', '.goose', function() {
+        let containerWidth = $('main').width();
+        let containerHeight = $('main').height();
+        let newPositionX = Math.random() * containerWidth;
+        let newPositionY = Math.random() * containerHeight;
+        $(this).css({
+            'display': 'block',
+            'top': newPositionY,
+            'left': newPositionX
+        });
+    });
+});
+</script>
+
+</body>
+	
+</html> 
