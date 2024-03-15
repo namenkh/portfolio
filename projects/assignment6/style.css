@@ -1,0 +1,109 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+
+/* "Mobile first" CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
+
+body {
+	
+	
+}
+
+
+#container {
+	height:100%;
+	
+}
+
+
+/* The two portions of the page in black, with yellow text */
+header, section {
+	background:rgb(123, 123, 123);
+	padding:25px;
+	color:rgb(75, 75, 75);
+}
+
+
+
+/* The three div's with cat background images */
+#cat1, #cat2, #cat3 {
+	height:700px;
+	height:100%;
+}
+
+
+#cat1 {
+	background:url('../img/cat1.jpg')no-repeat fixed center;
+	background-size:cover;
+}
+
+#cat2 {
+	background:url('../img/cat2.jpg')no-repeat fixed center;
+	background-size:cover;
+}
+
+#cat3 {
+	background:url('../img/cat3.jpg')no-repeat fixed center;
+	background-size:cover;
+}
+#cat2 h1{
+	color:white;
+	font-size:140px;
+	position:absolute;
+}
+
+
+
+/* A better looking default horizontal rule */
+hr {
+    display: block;
+    height: 1px;
+    border: 0px;
+    border-top: 1px solid #ccc;
+    margin: 1em 0px;
+    padding: 0px;
+}
+
+
+
+/* ========================================
+MEDIA QUERIES!
+======================================== */
+
+/* New CSS for tablet sizes.
+You can change the pixel number below */
+@media all and (min-width: 768px) {
+	
+	
+	
+	
+} /* closes 768px+ */
+
+
+
+
+/* New CSS for desktop sizes.
+You can change the pixel number below */
+@media all and (min-width: 1024px) {
+	
+	
+	
+	
+} /* closes 1024px+ */
+
+
+
+
+
