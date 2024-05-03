@@ -6,74 +6,21 @@ html, body {
 }
 
 html {
+		/* Standard text-settings below */
 	font-size: 1em;
     line-height: 1.4em;
 }
 
-.headerimg{
-    height: auto;
-    width: 150px;
-    padding-left:30px;
-    padding-top:30px;
-    text-align:left;
-  }
-head{
-    padding: 40px;
-}
 
-h1 {
-    font-family: retiro-std-24pt, sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    color:#0050ec;
-    font-size: 100px;
-    text-align: center;
-    padding-right:20px;
-  }
 
-h3{
-    text-align: center;
-}
 
-  .about,
-  .interviews,
-  .icons {
-    padding: 20px;
-  }
-  
-  .interviewee {
-    display: flex; 
-    align-items: center; 
-    flex-direction: column;
-    margin-bottom:20px; 
-    color: #375859;
-    padding:20px;
-    border-radius: 1%;
-   }
-   .interviewee img { /* Adjust as per actual image size */
-    padding:20px;
-    width:70px; 
-    height:auto; 
-    margin-right:20px; 
-    border-radius:100% ;
-   }
 /* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
 
 body {
-    font-family: mostra-nuova, sans-serif;
-    font-style: normal;
-    font-weight: 200;
-    background-color: #FFFBE7;
-    color:#37966F;
-    background-image: url('img/background.png');
-	background-repeat:no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
+	
+	
 }
-footer{
-    text-align: center;
-    padding: 5%;
-}
+
 
 #container {
 	
