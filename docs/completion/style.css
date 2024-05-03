@@ -10,6 +10,12 @@ html {
     line-height: 1.4em;
 }
 
+/*.headericon{
+    height: auto;
+    width: 1px;
+    text-align: right;
+}...NOT CHANGING SIZE*/
+
 .headerimg{
     height: auto;
     width: 150px;
@@ -31,8 +37,13 @@ h1 {
     padding-right:20px;
   }
 
+h2{
+    color:#7e7ef0;
+}
+
 h3{
     text-align: center;
+    color: #7e7ef0;
 }
 
   .about,
@@ -40,40 +51,46 @@ h3{
   .icons {
     padding: 20px;
   }
-  
+
   .interviewee {
     display: flex; 
     align-items: center; 
     flex-direction: column;
     margin-bottom:20px; 
-    color: #375859;
     padding:20px;
     border-radius: 1%;
    }
-   .interviewee img { /* Adjust as per actual image size */
+   .interviewee img { 
     padding:20px;
     width:70px; 
     height:auto; 
     margin-right:20px; 
     border-radius:100% ;
    }
+
 /* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
 
 body {
     font-family: mostra-nuova, sans-serif;
     font-style: normal;
     font-weight: 200;
-    background-color: #FFFBE7;
-    color:#37966F;
+    color:#350392;
     background-image: url('img/background.png');
 	background-repeat:no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
 }
+
+h4{
+    font-size: 40px;
+    font-weight: 200;
+    color: #fffbe7;
+}
 footer{
     text-align: center;
     padding: 5%;
 }
+
 
 #container {
 	
