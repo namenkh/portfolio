@@ -15,18 +15,34 @@ html {
 
 
 /* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
-
-body {
-	
-	
+head{
+        
+    
 }
-
-
+h1{
+    text-align: center;
+}
+img{
+        margin: 0 auto;
+        width: 300px;
+        border-radius: 100%;
+        display: flex;
+        text-align: center;
+}
+body {
+        font-family: mostra-nuova, sans-serif;
+        font-style: normal;
+        font-weight: 200;
+        color:#350392;
+        align-items: center;
+}
+.interviewreflection{
+    padding: 60px;
+    text-align: center;
+}
 #container {
 	
 }
-
-
 
 
 

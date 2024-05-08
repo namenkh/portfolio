@@ -48,6 +48,7 @@ nav a {
 nav a:hover {
     color: hsl(216, 85%, 74%);
 }
+
 .dropbtn {
     background-color: #b7ceb8;
     color: rgb(255, 255, 255);
@@ -82,6 +83,7 @@ nav a:hover {
   .dropdown:hover .dropdown-content {display: block;}
   
   .dropdown:hover .dropbtn {background-color: #8eddff;}
+
 
 header{
     color: rgb(56, 24, 19);
