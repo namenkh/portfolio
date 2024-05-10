@@ -1,79 +1,93 @@
 /* Basic CSS resets -- leveling slight inconsistencies in browsers */
-html, body {
-	margin:0px;
-	padding:0px;
-	height:100%;
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
 }
-
 html {
-		/* Standard text-settings below */
-	font-size: 1em;
+    /* Standard text-settings below */
+    font-size: 1em;
     line-height: 1.4em;
+    scroll-behavior: smooth;
 }
-
-
 
 
 /* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
-head{
-        
+
+body {
+    font-family: mostra-nuova, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    color: #350392;
+    align-items: center;
+    background-image: url('img/bannergradient.png');
+    background-repeat: no-repeat;
+    background-size: 100% 140px;
+    background-color: #FFFBE7;
+}
+
+.header-icon img{
+    float: right;
+    margin: 10% 100px;
+    max-width: 100%;
     
 }
-h1{
+.header-icon {
+    display: inline-block;
+    transition: transform 0.3s ease;
+    transform: rotate (90deg);
+}
+
+.header-icon:hover {
+    transform: rotate(90deg); 
+}
+
+
+.interviewee-title {
+    clear: both;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 0% 20px;
+}
+.profile-pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-pic img {
+    width: 170px;
+    height: auto;
+    border-radius: 100%;
+}
+
+.content-line {
+    padding: 46px;
+    text-align: center;
+    height: 16px;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.quote{
     text-align: center;
 }
-img{
-        margin: 0 auto;
-        width: 300px;
-        border-radius: 100%;
-        display: flex;
-        text-align: center;
-}
-body {
-        font-family: mostra-nuova, sans-serif;
-        font-style: normal;
-        font-weight: 200;
-        color:#350392;
-        align-items: center;
-}
-.interviewreflection{
-    padding: 60px;
-    text-align: center;
-}
-#container {
-	
-}
 
-
-
-
-
-/* Class for making YouTube/Vimeo videos responsive */
-
-figure.responsive {
-    position: relative;
-    padding-bottom: 56.25%;  /* 16:9 */
-    height: 0px;
-    overflow: hidden;
-    max-width: 100%;
-}
-
-figure.responsive iframe {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-}
-
-
-
-/* A better looking default horizontal rule */
+.back-to-top{
+    padding: 13px;
+    position: fixed;
+    bottom: 5px;
+    right: 10px;
+    border-radius:40%;
+  }
+  footer{
+    padding:30px;
+  }
 hr {
     display: block;
     height: 1px;
     border: 0px;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #350392;
     margin: 1em 0px;
     padding: 0px;
 }
@@ -86,34 +100,20 @@ You can adjust the min-width numbers below, and add as many new media queries as
 ======================================== */
 
 /* Minimum width for iPads and tablets.  */
-@media all and (min-width: 481px) {
-	
-	
-	
-	
-} /* closes 481px+ */
+@media all and (min-width: 481px) {}
+
+/* closes 481px+ */
 
 
 
 /* Minimum width for laptops. */
-@media all and (min-width: 769px) {
-	
-	
-	
-	
-} /* closes 769px+ */
+@media all and (min-width: 769px) {}
+
+/* closes 769px+ */
 
 
 
 /* Minimum width for desktop screens. */
-@media all and (min-width: 1024px) {
-	
-	
-	
-	
-} /* closes 1024px+ */
+@media all and (min-width: 1024px) {}
 
-
-
-
-
+/* closes 1024px+ */
