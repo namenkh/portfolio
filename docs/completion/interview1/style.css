@@ -35,12 +35,11 @@ body {
 }
 .header-icon {
     display: inline-block;
-    transition: transform 0.3s ease;
-    transform: rotate (90deg);
+    transition: transform 0.5s ease;
 }
 
 .header-icon:hover {
-    transform: rotate(90deg); 
+    transform: rotate(180deg); 
 }
 
 
@@ -71,6 +70,9 @@ body {
 
 .quote{
     text-align: center;
+}
+h3{
+    font-family: ;
 }
 
 .back-to-top{

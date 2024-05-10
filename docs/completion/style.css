@@ -10,13 +10,21 @@ html {
     line-height: 1.4em;
     scroll-behavior: smooth;
 }
-
-/*.headericon{
-    height: auto;
-    width: 1px;
+.headericon{
     text-align: right;
-}...NOT CHANGING SIZE*/
-
+    padding:3%;
+    display: inline-block;
+    transition: transform 0.5s ease;
+}
+.headericon img{
+    height: auto;
+    width: 40px;
+    margin: 10% 10px;
+    max-width: 50%;
+}
+.headericon:hover {
+    transform: rotate(180deg); 
+}
 .headerimg{
     height: auto;
     width: 150px;
@@ -40,10 +48,10 @@ h1 {
 
 h2{
     color:#7e7ef0;
+    text-align: center;
 }
 
 h3{
-    text-align: center;
     color: #7e7ef0;
 }
 
@@ -61,12 +69,13 @@ h3{
     padding:20px;
     border-radius: 1%;
    }
+
    .interviewee img { 
     padding:10px;
-    width:150px; 
+    width:160px; 
     height:auto; 
     margin-right:20px; 
-    border-radius:100% ;
+    border-radius:50% ;
    }
 
 /* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
@@ -81,9 +90,9 @@ body {
     background-attachment: fixed;
     background-size: 100% 100%;
 }
+
 .reflection{
     padding: 20px;
-    
 }
 
 h4{
