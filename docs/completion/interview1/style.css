@@ -48,6 +48,7 @@ body {
     text-align: center;
     font-size: 2em;
     margin-top: 0% 20px;
+    color: #0050ec;
 }
 .profile-pic{
     display: flex;
@@ -62,7 +63,7 @@ body {
 
 .content-line {
     padding: 46px;
-    text-align: center;
+    text-align: left;
     height: 16px;
     font-size: 20px;
     margin-bottom: 5px;
@@ -70,6 +71,11 @@ body {
 
 .quote{
     text-align: center;
+    color: #0050ec;
+    font-size: xx-large;
+    text-align: center;
+    font-weight: 100;
+    padding: 20%;
 }
 h3{
     font-family: ;
