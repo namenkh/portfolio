@@ -23,10 +23,10 @@
             <div class="headericon"> <img src="img/roundstar.png" alt="BlueStar"></div>
         </a>
         <div class="container">
-       <div class="selfportrait"> <img src="img/selfportrait.svg" alt="selfportrait">
+       <div class="selfportrait"> <img id="portrait" src="img/selfportrait.svg" alt="selfportrait">
     </div>
 
-    <h1>JourneySelf</h1>
+    <h1 id="title">JourneySelf</h1>
     <section class="about">
         <h2>About</h2>
         <p>In today's fast-paced and ever-changing world, the pursuit of personal growth and self-
@@ -61,7 +61,7 @@
             </div>
 
             <div class="icons">
-                <img src="img/iconblue.png" alt="icon1">
+                <img id="blue-icon" src="img/iconblue.png" alt="icon1">
                 <img src="img/iconpink.png" alt="icon2">
                 <img src="img/iconpowderblue.png" alt="icon3">
             </div>
@@ -129,10 +129,17 @@
 
     <!-- Write your jQuery code inside of the .ready() function below -->
     <script>
+        const title = document.getElementById('title');
         $(document).ready(function () {
 
+            
+            $("#portrait").mouseover(function(){
+                    title.style.color = "#7e7ef0";
+            });
 
-
+            $("#portrait").mouseout(function(){
+                    title.style.color = "#0050ec";
+            });
 
         }); //close .ready()
     </script>
