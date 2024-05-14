@@ -1,31 +1,106 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
-* {
+html,
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-  }
-  body {
+    height: 100%;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4em;
+}
+
+body {
     font-family: "Work Sans", sans-serif;
-    background-color: #eca4fb;
+    background-color: #69a297;
     padding: 0.5rem;
     max-width: 60rem;
-    margin:0 auto;
-  }
-img{
-    width:100%;
-    padding:6px;
+    margin: 0 auto;
 }
-#container{
+
+.mobile{
+    background:pink;
+}
+.desktop{
+    opacity:0.05;
+}
+
+#container {
     width: 90%;
-    margin:auto;
+    margin: auto;
 }
-nav section{
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+nav section {
     border: 1px solid black;
+    margin-bottom: 15px;
 }
-figure{
-    margin:0px;
+
+figure {
+    margin: 0px;
 }
-figure img{
+
+figure img {
     width: 100%;
 }
+
+
+/* A better looking default horizontal rule */
+hr {
+    display: block;
+    height: 1px;
+    border: 0px;
+    border-top: 1px solid #ccc;
+    margin: 1em 0px;
+    padding: 0px;
+}
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+/* Minimum width for iPads and tablets.  */
+@media all and (min-width: 481px) {}
+
+/* closes 481px+ */
+
+
+
+/* Minimum width for laptops. */
+@media all and (min-width: 769px) {
+    #container{
+        width: 80%;
+    }
+    .mobile{
+        display:none;
+    }
+    .desktop{
+        opacity:1;
+    }
+    nav {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 15px;
+    }
+
+}
+
+/* closes 769px+ */
+
+/* Minimum width for desktop screens. */
+@media all and (min-width: 1024px) {
+    nav {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 15px;
+    }
+}
+
+/* closes 1024px+ */
