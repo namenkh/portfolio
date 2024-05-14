@@ -14,12 +14,15 @@ html {
 
 body {
     font-family: "Work Sans", sans-serif;
-    background-color: #69a297;
+    background-color: #a3c9a8;
     padding: 0.5rem;
     max-width: 60rem;
     margin: 0 auto;
 }
 
+h1{
+    color: #50808e;
+}
 .mobile{
     background:pink;
 }
@@ -32,18 +35,17 @@ body {
     margin: auto;
 }
 
-img {
-    width: 100%;
-    height: auto;
-}
-
 nav section {
-    border: 1px solid black;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: #ddd8c4;
     margin-bottom: 15px;
+    padding: 15px;
 }
-
+header{
+    text-align: center;
+}
 figure {
-    margin: 0px;
+    margin: 15px;
 }
 
 figure img {
