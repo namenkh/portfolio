@@ -1,0 +1,129 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+
+/* "Mobile first" CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
+
+body {
+
+}
+
+
+#container {
+	
+}
+
+
+/* The two portions of the page in black, with yellow text */
+header, section {
+	background:rgb(118, 170, 196);
+	padding:25px;
+	color:rgb(22, 13, 67);
+}
+
+h1{
+	text-align: center;
+}
+
+/* The three div's with cat background images */
+#cat1, #cat2, #cat3 {
+height: 500px;
+}
+
+
+#cat1 {
+	background:url('img/1.png')no-repeat fixed center;
+	background-size: cover;
+}
+
+#cat2 {
+	background:url('img/2.jpeg')no-repeat fixed center;
+	background-size: cover;
+	position: relative;
+}
+
+#cat3 {
+	background:url('img/3.jpeg')no-repeat fixed center;
+	background-size: cover;
+}
+
+#cat2 h2{
+	color: rgb(255, 255, 255);
+	font-size: 100px;
+	line-height: 100px;
+	position: absolute;
+	margin-left: -252px;
+	margin-top: -80px;
+	left: 50%;
+	top:50%;
+	-webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+
+}
+@-webkit-keyframes glow {
+	from {
+	  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+	}
+	to {
+	  text-shadow: 0 0 20px #fff, 0 0 30px #4df9ff, 0 0 40px #4df9ff, 0 0 50px #4df9ff, 0 0 60px #4df9ff, 0 0 70px #4df9ff, 0 0 80px #4df9ff;
+	}
+  }
+  footer {
+	padding: 10%;
+	text-align: center;
+  }
+
+/* A better looking default horizontal rule */
+hr {
+    display: block;
+    height: 1px;
+    border: 0px;
+    border-top: 1px solid #ccc;
+    margin: 1em 0px;
+    padding: 0px;
+}
+
+
+
+/* ========================================
+MEDIA QUERIES!
+======================================== */
+
+/* New CSS for tablet sizes.
+You can change the pixel number below */
+@media all and (min-width: 768px) {
+	
+	
+	
+	
+} /* closes 768px+ */
+
+
+
+
+/* New CSS for desktop sizes.
+You can change the pixel number below */
+@media all and (min-width: 1024px) {
+	
+	
+	
+	
+} /* closes 1024px+ */
+
+
+
+
+
