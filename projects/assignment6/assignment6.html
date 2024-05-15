@@ -30,7 +30,7 @@
   <section id="one">
   <p>In recent times, the connection between humans and their pets has undergone a profound transformation. Pets are no longer just companions; they have ascended to the cherished status of family members. This shift is not confined by borders or cultures; it is a global phenomenon. It signifies a fundamental change in how we perceive and welcome our furry, feathered, and scaled companions into our lives.</p>
 
-    <p>The intricate world of consumer behaviors towards pets reveals the subtleties of this evolving relationship. It examines the multifaceted aspects of pet ownership, from the diverse array of animals that find a place in our homes to the significant financial investment we make in their well-being. Understanding these trends offers valuable insights into the profound impact pets have on our lives and how this influences industries, from pet care to personal entertainment.</p>
+    <p style="position:fixed;">The intricate world of consumer behaviors towards pets reveals the subtleties of this evolving relationship. It examines the multifaceted aspects of pet ownership, from the diverse array of animals that find a place in our homes to the significant financial investment we make in their well-being. Understanding these trends offers valuable insights into the profound impact pets have on our lives and how this influences industries, from pet care to personal entertainment.</p>
     
    <p>The transition towards viewing pets as family members is not a passing trend; it is a seismic shift that influences every facet of our lives. As we navigate this complex terrain, our pets have taken on roles beyond being mere animals. They become sources of comfort, companionship, and steadfast loyalty. The financial commitment towards their care is not a mere expense, but an investment in enhancing our lives.</p>
     
@@ -75,12 +75,18 @@
   <!-- Container for your jQuery code -->
   <script>
 $(document).ready(function() {
-
+  $(window).scroll(function() {
+    if ($(document).scrollTop() > 70) {
+      $("p").addClass("test");
+    } else {
+      $("p").removeClass("test");
+    }
+  });
 });
 
 
 
-}); //close .ready()
+ //close .ready()
 </script>
 
 </body>
