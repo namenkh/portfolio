@@ -17,17 +17,51 @@ html {
 /* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
 
 body {
-	
+	font-family: "Work Sans", sans-serif;
+    background-color: #69a297;
+    padding: 0.5rem;
+    max-width: 60rem;
+    margin: 0 auto;
 	
 }
-
-
+h1{
+    color: #ddd8c4;
+}
+.mobile{
+    background:pink;
+}
+.desktop{
+    opacity:0.05;
+}
 #container {
+    width: 90%;
+    margin: auto;
 	
 }
+main section {
+    background-color: #50808e;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+a {
+    color: #a3c9a8;
+}
 
+a:hover{
+    color:#ddd8c4;
+}
 
+figure {
+    margin: 15px;
+}
+figure img {
+    width: 100%;
+}
 
+footer {
+    padding: 15px;
+    text-align: center;
+}
 
 
 
