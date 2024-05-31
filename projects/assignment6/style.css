@@ -1,8 +1,12 @@
 /* Basic CSS resets -- leveling slight inconsistencies in browsers */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Source+Code+Pro&display=swap');
+
 html, body {
-	margin:0px;
+	margin:0 auto;
 	padding:0px;
 	height:100%;
+	box-sizing:border-box;
+	scroll-behavior: smooth;
 }
 
 html {
@@ -12,47 +16,101 @@ html {
 }
 
 
-
-
 /* "Mobile first" CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
-
-body {
-
-}
-
 .test {
 	color: rgb(255, 255, 255);
   }
-#container {
-	
+
+.hidden{
+	opacity: 0;
+	filter: blur(5px);
+	transform: translate(-100%);
+	transition:all 1s;
 }
+
+.show{
+	opacity:1;
+	filter:blur(0);
+	transform:translate(0);
+}
+
+body {
+background-color: #b7e9e6;
+}
+
+section {
+
+	padding: 10px;
+}
+
+#container {
+}
+
 a{
 	color:white ;
-	background-color: rgb(104, 142, 255);
+	background-color: #688eff;
 	line-height: 30px;
 	padding-left: 15px;
 	padding-right: 15px;
-	position:absolute;
+	position:fixed;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	box-shadow: 2px 2px 10px #5369a2;
 }
 a:hover{
 	color: #f2b86c;
 }
+
+#myBtn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	background-color: #688eff;
+	color: white;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+	background-color: #555;
+  }
+  
+
 header, section {
-	background:rgb(118, 170, 196);
-	padding:25px;
-	color:rgb(22, 13, 67);
+	background:#76aac4;
+	color:rgb(246, 246, 246);
 }
 
-h1{
+header{
+	padding: 0;
 	text-align: center;
+	text-shadow: 2px 2px 30px #232323;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+
+h1{
+	font-family: "Lobster", cursive;
+	font-size: 3rem; 
+	padding: 1rem; 
+	padding-top: 5rem;
+	padding-bottom: 2em;
+	display: inline-block;
+	margin: 0 10px;
+
 }
 
 /* The three div's with cat background images */
 #cat1, #cat2, #cat3 {
 height: 500px;
 }
-
 
 #cat1 {
 	background:url('img/1.png')no-repeat fixed center;
@@ -62,7 +120,6 @@ height: 500px;
 #cat2 {
 	background:url('img/2.jpeg')no-repeat fixed center;
 	background-size: cover;
-	position: relative;
 }
 
 #cat3 {
@@ -70,30 +127,8 @@ height: 500px;
 	background-size: cover;
 }
 
-#cat2 h2{
-	color: rgb(255, 255, 255);
-	font-size: 100px;
-	line-height: 100px;
-	position: absolute;
-	margin-left: -252px;
-	margin-top: -80px;
-	left: 50%;
-	top:50%;
-	-webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
-
-}
-@-webkit-keyframes glow {
-	from {
-	  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-	}
-	to {
-	  text-shadow: 0 0 20px #fff, 0 0 30px #4df9ff, 0 0 40px #4df9ff, 0 0 50px #4df9ff, 0 0 60px #4df9ff, 0 0 70px #4df9ff, 0 0 80px #4df9ff;
-	}
-  }
   footer {
-	padding: 10%;
+	padding: 5%;
 	text-align: center;
 	color: #efefef;
 	background-color:rgb(118, 170, 196) ;
@@ -119,7 +154,16 @@ MEDIA QUERIES!
 You can change the pixel number below */
 @media all and (min-width: 768px) {
 	
-	
+	#container{
+        width: 100%;
+    }
+    .mobile{
+        display:none;
+    }
+    .desktop{
+        opacity:1;
+    }
+
 	
 	
 } /* closes 768px+ */
@@ -130,9 +174,7 @@ You can change the pixel number below */
 /* New CSS for desktop sizes.
 You can change the pixel number below */
 @media all and (min-width: 1024px) {
-	
-	
-	
+
 	
 } /* closes 1024px+ */
 
