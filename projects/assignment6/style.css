@@ -5,21 +5,14 @@ html, body {
 	margin:0 auto;
 	padding:0px;
 	height:100%;
-	box-sizing:border-box;
 	scroll-behavior: smooth;
 }
 
 html {
-		/* Standard text-settings below */
 	font-size: 1em;
-    line-height: 1.4em;
+    line-height: 1.5em;
 }
 
-
-/* "Mobile first" CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
-.test {
-	color: rgb(255, 255, 255);
-  }
 
 .hidden{
 	opacity: 0;
@@ -35,8 +28,13 @@ html {
 }
 
 body {
-background-color: #b7e9e6;
+background-color: #76aac4;
+color:#232323;
 }
+
+.test {
+	color: rgb(255, 255, 255);
+  }
 
 section {
 
@@ -107,7 +105,7 @@ h1{
 
 }
 
-/* The three div's with cat background images */
+
 #cat1, #cat2, #cat3 {
 height: 500px;
 }
@@ -149,34 +147,51 @@ hr {
 /* ========================================
 MEDIA QUERIES!
 ======================================== */
+/*MOBILE*/
+@media all and (min-width:360px){
+h1{
+	font-size: 30px;
+	padding-bottom: 80px;
+}
+body{
+	font-size: 15px;
+}
 
-/* New CSS for tablet sizes.
-You can change the pixel number below */
+}
+/*TABLET*/
 @media all and (min-width: 768px) {
 	
-	#container{
-        width: 100%;
-    }
-    .mobile{
-        display:none;
-    }
-    .desktop{
-        opacity:1;
-    }
+	h1{
+		font-size: 50px;
+		padding-bottom: 450px;
+		padding-top:450px;
+	}
 
+body{
+	font-size: 20px;
+}
 	
-	
-} /* closes 768px+ */
+} 
 
-
-
-
-/* New CSS for desktop sizes.
-You can change the pixel number below */
+/*LAPTOP*/
 @media all and (min-width: 1024px) {
 
+	h1{
+		font-size:70px;
+		padding-top:500px;
+		padding-bottom:500px;
+	}
+	
+	body{
+		font-size:26px;
+	}
 	
 } /* closes 1024px+ */
+
+
+
+
+
 
 
 
